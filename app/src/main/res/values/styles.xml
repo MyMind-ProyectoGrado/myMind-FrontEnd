@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="poppins">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/MyAlertDialogShape</item>
+    </style>
+
+    <style name="MyAlertDialogShape" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+</resources>

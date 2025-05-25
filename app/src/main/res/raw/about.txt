@@ -1,0 +1,17 @@
+👩‍💻 ¿Quiénes somos?
+Somos cuatro estudiantes de último semestre de Ingeniería de Sistemas de la Pontificia Universidad Javeriana. Este proyecto, myMind, es nuestro trabajo de grado y nace con una motivación clara: apoyar el bienestar emocional de los estudiantes universitarios.
+
+🧠 El problema
+A pesar de los esfuerzos institucionales, muchos estudiantes no buscan ayuda psicológica. Algunos no son conscientes de su estado emocional, otros no saben cómo expresarlo. Esto puede provocar acumulación de ansiedad, estrés y malestar.
+
+🎯 La solución
+Creamos myMind, una app móvil que permite grabar notas de voz para expresar emociones. Usamos procesamiento de lenguaje natural (NLP) para analizar lo que dices y generar reportes personalizados de tu estado emocional a lo largo del tiempo.
+
+📱 ¿Qué hace la app?
+🎙️ Captura tus emociones y sentimientos en el audio
+🧾 Transcribe y analiza lo que expresas
+📊 Genera reportes visuales de cómo te has sentido
+🔐 Ofrece un espacio privado y seguro para desahogarte
+
+🎓 ¿Por qué lo hacemos?
+Porque creemos en la importancia del autoconocimiento emocional, un espacio de desahogo y en el poder de las herramientas tecnológicas para mejorar la salud mental. Este proyecto busca complementar las iniciativas de bienestar universitario y promover espacios de reflexión emocional.

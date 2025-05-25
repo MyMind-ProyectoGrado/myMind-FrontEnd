@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#80FFFFFF</color>
+    <color name="darkestPurple">#352b73</color>
+    <color name="deepPurple">#413286</color>
+    <color name="mediumPurple">#584dc0</color>
+    <color name="mediumVibrantPurple">#9c97fe</color>
+    <color name="mediumLightPurple">#8E81D0</color>
+    <color name="lightPurple">#8985e7</color>
+    <color name="pastelPurple">#D1C9F1</color>
+    <color name="pastelBlue">#BDE4E9</color>
+    <color name="pastelPink">#EFB3D7</color>
+    <color name="redWarning">#FF0000</color>
+    <color name="navbarTransparent">#80FFFFFF</color>
+    <color name="redDelete">#ff3b5b</color>
+    <color name="noColor">#66FFFFFF</color>
+</resources>
+

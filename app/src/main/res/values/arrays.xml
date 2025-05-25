@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="color_modes">
+        <item>Modo Oscuro</item>
+        <item>Paleta 1</item>
+        <item>Paleta 2</item>
+        <item>Paleta 3</item>
+    </string-array>
+</resources>

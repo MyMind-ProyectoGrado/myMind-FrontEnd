@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_white"
+    android:paddingLeft="25dp"
+    android:paddingTop="30dp"
+    android:paddingRight="25dp"
+    tools:context=".RegisterActivity">
+
+
+    <!-- Contenedor desplazable para los gráficos -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:clipToPadding="false"
+        android:fadeScrollbars="false"
+        android:fadingEdge="none"
+        android:overScrollMode="always"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="5dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+        android:scrollbarTrackVertical="@drawable/scrollbar_track"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/signInTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Registro"
+                android:textColor="@color/darkestPurple"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/imageFrameLayout"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_shape"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/uploadIcon"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/baseline_image_search_12"
+                    android:scaleType="centerCrop" />
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_focus"
+                android:hint="Nombre"
+                android:imeOptions="actionNext"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textColor="@color/deepPurple"
+                android:textColorHint="@color/mediumPurple" />
+
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_focus"
+                android:hint="Correo"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textColor="@color/deepPurple"
+                android:textColorHint="@color/mediumPurple" />
+
+            <LinearLayout
+                android:id="@+id/passwordContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_focus"
+                android:orientation="horizontal"
+                android:paddingEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailEditText">
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Contraseña"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/deepPurple"
+                    android:textColorHint="@color/mediumPurple" />
+
+                <ImageButton
+                    android:id="@+id/togglePasswordButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Toggle Password Visibility"
+                    android:padding="8dp"
+                    android:src="@drawable/baseline_visibility_off_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/passwordInstructionsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Mínimo 8 caracteres"
+                    android:textColor="@color/redDelete"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvUpper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Al menos una letra mayúscula"
+                    android:textColor="@color/redDelete"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvLower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Al menos una letra minúscula"
+                    android:textColor="@color/redDelete"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvDigit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Al menos un número"
+                    android:textColor="@color/redDelete"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvSpecial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Al menos un carácter especial (@$!%*?&amp;+-_/)"
+                    android:textColor="@color/redDelete"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/birthdayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_focus"
+                android:gravity="left"
+                android:padding="12dp"
+                android:text="Fecha de nacimiento"
+                android:textColor="@color/deepPurple"
+                android:textColorHighlight="@color/redDelete"
+                app:rippleColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/editTextCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_focus"
+                android:hint="Ciudad"
+                android:imeOptions="actionNext"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textColor="@color/deepPurple"
+                android:textColorHint="@color/mediumPurple" />
+
+            <EditText
+                android:id="@+id/editTextUniversidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_focus"
+                android:hint="Universidad"
+                android:imeOptions="actionNext"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textColor="@color/deepPurple"
+                android:textColorHint="@color/mediumPurple" />
+
+            <EditText
+                android:id="@+id/editTextCareer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_focus"
+                android:hint="Carrera"
+                android:imeOptions="actionNext"
+                android:padding="12dp"
+                android:singleLine="true"
+                android:textColor="@color/deepPurple"
+                android:textColorHint="@color/mediumPurple" />
+
+            <Spinner
+                android:id="@+id/spinnerPersonality"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_focus"
+                android:hint="Personalidad"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/mediumPurple"
+                android:textColorHint="@color/mediumPurple"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_focus"
+                android:hint="Género"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/mediumPurple"
+                android:textColorHint="@color/mediumPurple"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/lightPurple"
+                android:gravity="center"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:text="Registrarse"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#00FFFFFF"
+                android:text="¿Ya tienes una cuenta? \nInicia sesión"
+                android:textColor="@color/deepPurple"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

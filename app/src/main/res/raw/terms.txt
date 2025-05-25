@@ -1,0 +1,223 @@
+1. INTRODUCCIÓN
+
+1.1. Presentación 
+
+myMind es una aplicación diseñada para el seguimiento y análisis del estado emocional de sus usuarios mediante el uso de modelos de procesamiento de lenguaje natural (NLP). A través de la recolección de notas de voz, la transcripción de texto y el análisis de patrones emocionales, myMind busca proporcionar herramientas para la autoconciencia emocional sin constituir un servicio de diagnóstico o tratamiento psicológico. 
+
+Dado que la información recolectada por myMind se vam a tratar datos personales, lo que puede incluir datos sensibles relacionados con emociones, estados de ánimo y experiencias personales, se establece la presente Política de Tratamiento de Datos Personales, con el fin de garantizar la protección, seguridad y uso adecuado de la información, en cumplimiento de la normativa colombiana vigente en materia de protección de datos personales. 
+
+1.2. Objetivo de la Política 
+
+La presente política tiene como objetivo establecer los principios, procedimientos y derechos de los titulares de los datos personales recolectados y tratados por myMind. En ella se describen las medidas adoptadas para garantizar la seguridad de la información y el respeto a la privacidad de los usuarios. 
+
+1.3. Ámbito de Aplicación 
+
+Esta política se aplica a: 
+
+Todos los datos personales recopilados y procesados por myMind, incluyendo texto transcrito de notas de voz, análisis de emociones y tendencias emocionales. 
+
+Los usuarios registrados en la aplicación 
+
+Desarrolladores y terceros que, en el desarrollo de sus actividades, puedan acceder a información contenida en la base de datos de myMind. 
+
+1.4. Responsable 
+
+El responsable del tratamiento de los datos personales recolectados a través de la aplicación myMind es el equipo de desarrollo del proyecto myMind, un grupo de trabajo académico sin personería jurídica, actualmente en fase de investigación y desarrollo. 
+
+Nombre del responsable: Proyecto myMind 
+Naturaleza: Grupo de trabajo académico sin personería jurídica 
+Domicilio: Bogotá D.C., Colombia 
+Correo electrónico de contacto: myMindProject@protonmail.com 
+ 
+
+El equipo responsable se compromete a garantizar la protección, confidencialidad y correcto tratamiento de los datos personales recolectados, conforme a lo establecido en la Ley 1581 de 2012 y demás normas concordantes sobre protección de datos personales en Colombia. 
+
+ 
+
+2. MARCO LEGAL 
+
+2.1. Legislación Aplicable 
+
+El tratamiento de los datos personales en myMind se rige por las siguientes normas de la República de Colombia: 
+
+Ley 1581 de 2012: Régimen General de Protección de Datos Personales, que establece principios y derechos de los titulares de datos. 
+
+Decreto 1377 de 2013: Reglamentación parcial de la Ley 1581 de 2012, en lo relacionado con las políticas de tratamiento de datos y la autorización de los titulares. 
+
+Constitución Política de Colombia (Artículos 15 y 20): Protección del derecho a la intimidad, habeas data y acceso a la información. 
+
+Reglamentos y circulares de la Superintendencia de Industria y Comercio (SIC): Ente encargado de supervisar el cumplimiento de la normativa de protección de datos en Colombia. 
+
+2.2. Principios Rectores del Tratamiento de Datos 
+
+De acuerdo con la legislación vigente, el tratamiento de datos personales en MyMind se basa en los siguientes principios: 
+
+Legalidad: El tratamiento de datos es una actividad regulada que debe cumplir con la normativa aplicable. 
+
+Finalidad: Los datos se recolectan con propósitos legítimos y previamente informados al usuario. 
+
+Libertad: La recolección de datos se realiza con el consentimiento previo, expreso e informado del usuario. 
+
+Veracidad o Calidad: La información tratada debe ser exacta, completa y actualizada. 
+
+Transparencia: Los usuarios tienen derecho a conocer, en cualquier momento, el uso que se le está dando a sus datos personales. 
+
+Seguridad: myMind adopta medidas de protección para evitar el acceso no autorizado, pérdida o uso indebido de los datos. 
+
+Confidencialidad: Los datos personales no serán divulgados sin autorización del usuario o sin una orden legal que lo justifique. 
+
+3. RESPONSABLE DEL TRATAMIENTO Y TIPOS DE DATOS TRATADOS 
+
+3.1. Responsable del Tratamiento 
+
+myMind, como responsable del tratamiento de datos personales, se compromete a garantizar la confidencialidad, integridad y seguridad de la información de los usuarios, en cumplimiento de la normativa vigente. 
+
+3.2. Tipos de Datos Tratados 
+
+myMind recopila y trata los siguientes tipos de datos personales: 
+
+3.2.1. Datos Generales del Usuario 
+
+Nombre y apellido (opcional en algunos casos). 
+
+Correo electrónico. 
+
+Credenciales de autenticación (cifradas para mayor seguridad). 
+
+3.2.2. Datos Relacionados con la Funcionalidad de myMind 
+
+Notas de voz: Grabaciones de hasta un minuto de duración que los usuarios proporcionan voluntariamente. 
+
+Texto transcrito: Conversión de las notas de voz a texto para su análisis posterior. 
+
+Análisis de emociones y sentimientos: Evaluación de patrones emocionales mediante modelos de procesamiento de lenguaje natural (NLP). 
+
+Tendencias emocionales históricas: Registro de cambios en el estado emocional a lo largo del tiempo para generar reportes personalizados. 
+
+3.2.3. Datos Sensibles 
+
+De acuerdo con la Ley 1581 de 2012, myMind puede tratar datos sensibles, ya que la información proporcionada por los usuarios puede reflejar estados emocionales o experiencias personales. En estos casos: 
+
+Se informa expresamente al usuario sobre la naturaleza sensible de estos datos. 
+
+Su suministro es completamente voluntario y no se condiciona el acceso a la plataforma a su entrega. 
+
+Se implementan medidas de seguridad adicionales para su protección. 
+
+4. FINALIDADES DEL TRATAMIENTO DE DATOS Y DERECHOS DE LOS TITULARES 
+
+4.1. Finalidades del Tratamiento de Datos 
+
+Los datos personales recolectados por MyMind serán utilizados para las siguientes finalidades: 
+
+Análisis de emociones: Evaluar patrones emocionales del usuario a través de NLP para ofrecer reportes y tendencias. 
+
+Personalización de la experiencia: Ajustar recomendaciones y funcionalidades en función de las emociones detectadas. 
+
+Seguridad y autenticación: Verificar la identidad del usuario y garantizar la protección de su cuenta. 
+
+Investigación y desarrollo: Mejorar los modelos de análisis emocional sin comprometer la identidad de los usuarios. 
+
+Cumplimiento legal: Atender requerimientos de entidades reguladoras y cumplir con normativas de protección de datos. 
+
+4.2. Derechos de los Titulares 
+
+De acuerdo con la normativa vigente, los usuarios tienen los siguientes derechos sobre sus datos personales: 
+
+Acceder: Acceder de forma gratuita a los datos personales almacenados y el tratamiento aplicado. 
+
+Actualizar y Rectificar: Solicitar la corrección de datos. Este derecho se podrá ejercer frente a datos parciales, inexactos, incompletos, fraccionados, que induzcan a error, o aquellos cuyo tratamiento esté expresamente prohibido o no haya sido autorizado 
+
+Revocar la Autorización: Retirar el consentimiento para el tratamiento de datos, y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales. 
+
+Eliminar sus Datos: Solicitar la supresión de su información personal cuando no sea necesaria para la finalidad inicial. 
+
+Solicitar prueba de la autorización otorgada al Responsable del Tratamiento de datos personales salvo cuando expresamente se exceptúe como requisito para el tratamiento, de conformidad con lo previsto en el artículo 10 de la Ley 1581 de 2012. 
+
+Ser informado por el responsable del Tratamiento o el Encargado del Tratamiento, previa solicitud, respecto del uso que le ha dado a sus datos personales. 
+
+Presentar ante la Superintendencia de Industria y Comercio quejas por infracciones a lo dispuesto en la Ley 1581 de 2012 y las demás normas que la modifiquen, adicionen o complementen, 
+
+5. MEDIDAS DE SEGURIDAD Y TRANSFERENCIA DE DATOS 
+
+5.1. Medidas de Seguridad 
+
+myMind implementa diversas medidas de seguridad para proteger los datos personales de los usuarios, previniendo el acceso no autorizado, la pérdida, alteración o uso indebido de la información. Entre estas medidas se incluyen: 
+
+Cifrado de Datos: Toda la información almacenada en MyMind, incluyendo contraseñas y datos sensibles, es cifrada utilizando protocolos de seguridad avanzados. 
+
+Control de Acceso: Se emplean sistemas de autenticación robusta para garantizar que solo los usuarios autorizados puedan acceder a su información. 
+
+Monitoreo y Auditoría: Se realizan revisiones periódicas para identificar vulnerabilidades y prevenir incidentes de seguridad. 
+
+Almacenamiento Seguro: Los datos se guardan en servidores con protocolos de seguridad certificados y con acceso restringido. 
+
+En caso de detectar una vulnerabilidad o posible filtración de datos, myMind tomará acciones inmediatas y notificará a los usuarios afectados, según lo estipulado por la normativa vigente. 
+
+5.2. Transferencia y Transmisión de Datos 
+
+La información de los usuarios no será compartida con terceros sin su consentimiento expreso, salvo en los siguientes casos: 
+
+Cumplimiento Legal: Cuando sea requerido por una autoridad judicial o administrativa, conforme a la legislación colombiana. 
+
+Prestadores de Servicios: En caso de que terceros sean contratados para proveer infraestructura tecnológica o servicios de análisis, siempre bajo acuerdos que garanticen la protección de los datos. 
+
+Anonimización para Estudios: Se podrán utilizar datos anonimizados para estudios estadísticos o de mejora de la plataforma sin comprometer la identidad del usuario. 
+
+Los datos personales recolectados por myMind serán sometidos a tratamiento automatizado, mediante herramientas tecnológicas como algoritmos de análisis de texto y modelos de inteligencia artificial, con fines de análisis emocional, visualización de tendencias y mejora del servicio. En algunos casos puntuales, los datos podrán ser objeto de tratamiento manual, por parte del equipo de desarrollo, exclusivamente para la atención de solicitudes de los usuarios o para validaciones internas, siempre garantizando la confidencialidad y seguridad de la información. 
+
+6. REVOCATORIA DE AUTORIZACIÓN Y SÚPRESION DE DATOS 
+
+Los titulares pueden solicitar la revocatoria del consentimiento otorgado para el tratamiento de sus datos o la eliminación de estos comunicándose con la persona responsable de las consultas y reclamos Natalia Mejía Estrada, cuando: 
+
+No se respeten los principios, derechos y garantías establecidos en la normativa vigente. 
+
+La información ya no sea necesaria para la finalidad con la que fue recopilada. 
+
+En estos casos, MyMind procederá con la supresión de los datos personales siempre que no exista una obligación legal o contractual que requiera su conservación. 
+
+Si un titular no recibe respuesta a sus solicitudes o considera que sus derechos han sido vulnerados, puede presentar una queja ante la Superintendencia de Industria y Comercio (SIC), entidad encargada de la protección de datos personales en Colombia. 
+
+ 
+
+7. CONSULTAS Y RECLAMOS 
+
+  
+
+Los titulares de los datos personales pueden realizar consultas para conocer la información que MyMind ha recopilado sobre ellos. Para ello, deben enviar una solicitud a través de los siguientes canales de contacto: 
+
+Persona Responsable: Natalia Mejía Estrada 
+
+Correo Electrónico: myMindProject@protonmail.com 
+
+Atención Telefónica: +57 315 674 3686 
+
+myMind responderá a las consultas en un plazo máximo de 10 días hábiles contados a partir de la recepción de la solicitud. Si no es posible atender la consulta en este tiempo, se informará al titular sobre la razón del retraso y la nueva fecha de respuesta, la cual no podrá superar los 5 días hábiles adicionales, conforme a la legislación vigente. 
+
+6.2. Reclamos 
+
+Si un titular considera que la información contenida en la base de datos de MyMind debe ser corregida, actualizada o eliminada, o si considera que se ha dado un uso inadecuado a sus datos, puede presentar un reclamo siguiendo este procedimiento: 
+
+Presentación del Reclamo: 
+
+Enviar la solicitud a través de los canales de contacto mencionados. 
+
+Incluir nombre completo y datos de contacto. 
+
+Especificar el motivo del reclamo y adjuntar documentos que respalden la solicitud, si aplica. 
+
+Verificación y Respuesta: 
+
+Una vez recibido el reclamo completo, myMind contará con 15 días hábiles para dar una respuesta. Si se requiere más tiempo, se notificará al usuario, con una prórroga máxima de 8 días hábiles adicionales.  
+
+ 
+
+8. VIGENCIA DE LA POLÍTICA Y ALMACENAMIENTO DE LOS DATOS 
+
+La presente Política de Tratamiento de Datos Personales entra en vigor a partir del 13 de mayo de 2025 y permanecerá vigente mientras se mantenga en funcionamiento la aplicación myMind. 
+
+Los datos personales recolectados serán tratados durante el tiempo que sea necesario para cumplir con las finalidades descritas en esta política. Posteriormente, serán eliminados o anonimizados de forma segura. 
+
+ 
+
+ 

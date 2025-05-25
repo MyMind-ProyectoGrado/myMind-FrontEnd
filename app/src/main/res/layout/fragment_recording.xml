@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:paddingTop="50dp"
+    tools:context=".RecordingFragment">
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        style="@style/poppins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Hola!"
+        android:textColor="@color/mediumPurple"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Según The American Heart Association, desahogarte hablando, puede mejorar tu salud mental y física."
+        android:textColor="@color/mediumPurple"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/subtitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Estoy aquí para escucharte"
+        android:textColor="@color/mediumPurple"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/staticBox"
+        app:layout_constraintEnd_toStartOf="@+id/imgHeader"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Fondo blanco de la parte inferior -->
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="170dp"
+        android:layout_height="280dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/mymind_character"
+        app:layout_constraintBottom_toTopOf="@+id/staticBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <View
+        android:id="@+id/staticBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_focus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Temporizador regresivo -->
+    <TextView
+        android:id="@+id/textCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/mediumPurple"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@+id/staticBox"
+        app:layout_constraintBottom_toTopOf="@+id/recordingControls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <LinearLayout
+        android:id="@+id/recordingControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="@+id/staticBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/voiceVisualizer">
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:backgroundTint="@color/pastelPink"
+            android:textColor="@color/deepPurple"
+            android:layout_margin="8dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Grabación"
+            android:backgroundTint="@color/mediumPurple"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pausar"
+            android:backgroundTint="@color/mediumPurple"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnResume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reanudar"
+            android:backgroundTint="@color/mediumPurple"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:visibility="gone"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:textStyle="bold"
+            android:backgroundTint="@color/mediumVibrantPurple"
+            android:textColor="@android:color/white"
+            app:strokeColor="@color/deepPurple"
+            app:strokeWidth="3dp"
+            android:elevation="8dp"
+            android:layout_margin="8dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!-- Visualizador de ondas -->
+    <com.example.mymindv2.adapters.VisualizerView
+        android:id="@+id/voiceVisualizer"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/recordingControls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/btnInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Necesitas ayuda?"
+        android:backgroundTint="#00FFFFFF"
+        android:textColor="@color/deepPurple"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/voiceVisualizer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

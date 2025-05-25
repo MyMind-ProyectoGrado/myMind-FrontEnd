@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient"
+    tools:context=".InstructionsFragment">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a MyMind!"
+        android:textColor="@color/darkestPurple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvMotivation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="“Conocerte a ti mismo es el primer paso para transformar tu mundo.”"
+        android:textColor="@color/darkestPurple"
+        android:textSize="16sp"
+        android:layout_below="@id/tvWelcome"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <!-- Contenedor de instrucciones -->
+    <LinearLayout
+        android:id="@+id/instructionsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/tvMotivation"
+        android:layout_above="@id/buttonsLayout"
+        android:layout_margin="16dp"
+        android:background="@drawable/white_focus"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎤 Paso 1: Inicia una grabación y desahógate. Tienes 1 minuto para hablar de todo lo que quieras. Cuéntanos cómo te sientes."
+                    android:textSize="18sp"
+                    android:textColor="@color/darkestPurple"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⏳ Paso 2: Presiona Enviar o espera a que se acabe el tiempo para terminar la grabación."
+                    android:textSize="18sp"
+                    android:textColor="@color/darkestPurple"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🧠 Paso 3: Usa el botón de Continuar para procesar el audio. Esto podría tardar unos minutos."
+                    android:textSize="18sp"
+                    android:textColor="@color/darkestPurple"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📊 Paso 4: Observa tu reporte con las emociones y sentimientos detectados en tu audio."
+                    android:textSize="18sp"
+                    android:textColor="@color/darkestPurple"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="❤️ Paso 5: En la pestaña de reportes verás el análisis de tus emociones a través del tiempo. Reflexiona y conoce tu mundo interior."
+                    android:textSize="18sp"
+                    android:textColor="@color/darkestPurple"
+                    android:layout_marginBottom="16dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Botón de entendido -->
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="¡Entendido!"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/mediumPurple"/>
+    </LinearLayout>
+
+</RelativeLayout>

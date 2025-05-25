@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".ConfirmationFragment">
+
+
+    <!-- Logo -->
+    <View
+        android:id="@+id/whiteBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/white_focus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="172dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo2_mymind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="8dp"
+        android:text="Puedes escuchar tu audio antes de enviarlo para procesar"
+        android:textColor="@color/mediumPurple"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox"
+        app:layout_constraintStart_toStartOf="@id/whiteBox"
+        app:layout_constraintTop_toBottomOf="@id/appLogo" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitleText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Esto podría tardar unos minutos, te notificaremos cuando esté listo"
+        android:textColor="@color/mediumPurple"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/whiteBox"
+        app:layout_constraintStart_toStartOf="@id/whiteBox"
+        app:layout_constraintTop_toBottomOf="@id/subtitleText" />
+
+    <Button
+        android:id="@+id/playAudioButton"
+        android:layout_width="232dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/lightPurple"
+        android:text="Escuchar grabación"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:drawablePadding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/continueButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitleText" />
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="232dp"
+        android:layout_height="57dp"
+        android:backgroundTint="@color/mediumPurple"
+        android:text="@string/continuar"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/cancelButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playAudioButton" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="232dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/deepPurple"
+        android:text="@string/cancelar"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/continueButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_white"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="40dp"
+    tools:context=".EditProfileFragment">
+
+    <TextView
+        android:id="@+id/editProfileTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Perfil"
+        android:textColor="@color/darkestPurple"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageFrameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/imageFrameLayout"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileTitleTextView">
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_shape"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:id="@+id/uploadIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/baseline_edit_24"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_focus"
+        android:hint="Nombre"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="@color/deepPurple"
+        android:textColorHint="@color/mediumPurple"
+        app:layout_constraintBottom_toTopOf="@+id/passwordContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFrameLayout" />
+
+    <LinearLayout
+        android:id="@+id/passwordContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/white_focus"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Nueva Contraseña"
+            android:textColor="@color/deepPurple"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/mediumPurple"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:background="@null" />
+
+        <ImageButton
+            android:id="@+id/togglePasswordButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Toggle Password Visibility"
+            android:src="@drawable/baseline_visibility_off_24"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordInstructionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/passwordContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/tvLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Mínimo 8 caracteres"
+            android:textColor="@color/redDelete"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvUpper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Al menos una letra mayúscula"
+            android:textColor="@color/redDelete"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvLower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Al menos una letra minúscula"
+            android:textColor="@color/redDelete"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDigit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Al menos un número"
+            android:textColor="@color/redDelete"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvSpecial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Al menos un carácter especial (@$!%*?&amp;+-_/)"
+            android:textColor="@color/redDelete"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/mediumPurple"
+        android:text="Guardar Cambios"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

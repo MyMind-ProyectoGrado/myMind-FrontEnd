@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    >
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/logo2_mymind"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:textColor="@color/darkestPurple"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/signInTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio de sesión"
+        android:textSize="27sp"
+        android:textColor="@color/darkestPurple"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textColor="@color/deepPurple"
+        android:textColorHint="@color/mediumPurple"
+        android:padding="12dp"
+        android:background="@drawable/white_focus"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/white_focus"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:textColor="@color/deepPurple"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/mediumPurple"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:background="@null"/>
+
+        <ImageButton
+            android:id="@+id/togglePasswordButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Toggle Password Visibility"
+            android:src="@drawable/baseline_visibility_off_24"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/forgotPassword"
+        android:layout_width="158dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="right"
+        android:padding="0dp"
+        android:text="Olvidé mi contraseña"
+        android:textColor="@color/mediumPurple"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:textSize="17dp"
+        android:backgroundTint="@color/lightPurple"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta? Regístrate!"
+        android:textSize="18dp"
+        android:textColor="@color/deepPurple"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regístrate aquí"
+        android:textSize="17dp"
+        android:backgroundTint="@color/mediumPurple"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

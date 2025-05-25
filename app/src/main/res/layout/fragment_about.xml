@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".AboutFragment">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acerca de Nosotros"
+        android:textColor="@color/darkestPurple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Contenedor de contenido -->
+    <LinearLayout
+        android:id="@+id/aboutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_above="@id/buttonsLayout"
+        android:background="@drawable/white_focus"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvAboutText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkestPurple"
+                android:textSize="18sp"/>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Botón de Volver -->
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Volver"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/mediumPurple"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">myMind</string>
+    <string name="description1">Expresa lo que llevas dentro, \n tu voz importa.</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="continuar">Continuar</string>
+    <string name="TyC">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+
+    <string name="slide1">Expresa tus emociones a través de grabaciones, sin juicios o presión</string>
+    <string name="slide2">Un espacio seguro donde puedes desahogarte</string>
+    <string name="slide3">Seguimiento de tu estado de ánimo</string>
+    <string name="slide4">Un espacio creado por estudiantes para estudiantes</string>
+    <string name="cancelar">Cancelar</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="com_auth0_domain">dev-8ewukkr4vyl7qsrz.us.auth0.com</string>
+    <string name="com_auth0_client_id">aRFvXr6gcGJ1HN4717EI4NR5PxfrWRb4</string>
+    <string name="com_auth0_scheme">demo</string>
+
+    <string-array name="gender_options">
+        <item>Selecciona tu género</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="personality_options">
+        <item>Selecciona tu personalidad</item>
+        <item>Introvertido</item>
+        <item>Extrovertido</item>
+    </string-array>
+
+    <string name="about_us_text">
+    MyMind es una aplicación creada con el propósito de promover el bienestar emocional a través del análisis de voz.
+    Nuestra misión es brindar herramientas accesibles y personalizadas para que los usuarios puedan monitorear sus emociones
+    y reflexionar sobre su estado de ánimo a lo largo del tiempo. Valoramos la privacidad, la empatía y el poder de la tecnología
+    para transformar positivamente la salud mental.
+</string>
+    <string name="EmotionAnalysis">Este reporte muestra un resumen emocional de tus grabaciones más recientes, incluyendo emociones detectadas, su distribución y tendencia general.</string>
+
+
+</resources>

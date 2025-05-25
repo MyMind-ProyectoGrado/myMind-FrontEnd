@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Términos y Condiciones"
+        android:textColor="@color/darkestPurple"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/termsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_above="@id/buttonsLayout"
+        android:background="@drawable/white_focus"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TyC"
+                android:textColor="@color/deepPurple"
+                android:textSize="18sp"/>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnDecline"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Declinar"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/mediumLightPurple"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Aceptar"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/mediumPurple"/>
+    </LinearLayout>
+</RelativeLayout>
